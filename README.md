@@ -23,7 +23,8 @@
 
 ## 🚀️ Sobre o Projeto
 
-A proposta do **Labenu System** é ter um sistema que represente a organização da Labenu. Possuindo os seguintes dados:
+A proposta do **Labenu System** é ter um sistema que represente a organização da Labenu, como um projeto básico e introdutório ao back-end.
+Possui os seguintes dados:
 - Estudantes (O usuário poderá criá-los)
 - Docentes (O usuário poderá criá-los)
 - Turmas (Dados pré-definidos pelo programador para que o estudante e docente sejam inseridos)
