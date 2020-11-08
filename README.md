@@ -1,33 +1,107 @@
-## LabenuSystem:
+<h1 align="center">
+  🚀️ Projeto de Introdução ao Back-end 👨‍💻️ Labenu System  🚀️
+</h1>
 
-Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, hoje, vamos pedir para criar um sistema que represente o básico da nossa organização. 
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/future4code/jackson-labenu-system9?logo=typescript">
 
-Ele deve possuir, ao menos, as 3 entidades importantes:
+  <img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/future4code/jackson-labenu-system9?color=pink">
 
-1. Estudantes 
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/last-commit/future4code/jackson-labenu-system9">
+</p>
 
-    Representa estudantes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e os principais hobbies dele. 
+---
 
-2. Docente
+# Índice
 
-    Representa docentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e todas as especialidades dele. Há 7 especialidades: React, Redux, CSS, Testes, Typescript, Programação Orientada a Objetos e Backend
+- 🚀️ Sobre o Projeto
+- 👨‍💻️ Tecnogias utilizadas
+- 📦️ Como utilizar o projeto
+- 🤔️ Como contribuir
 
-3. Turma
+---
 
-    Toda turma é composta das seguintes características: id, nome, data de início, data de término, lista de professores responsáveis, uma lista de alunos e módulo atual em que a turma está.
+## 🚀️ Sobre o Projeto
 
-    O módulo pode assumir os valores de 1 a 7 ou `undefined`, indicando que as aulas dessa turma ainda não começaram. Para esse exercício, vamos considerar que existam dois tipos de turma: integral ou noturna. Há uma restrição para o nome das turmas noturnas: tem que terminar com `-na-night`.
+A proposta do **Labenu System** é ter um sistema que represente a organização da Labenu. Possuindo os seguintes dados:
+- Estudantes (O usuário poderá criá-los)
+- Docentes (O usuário poderá criá-los)
+- Turmas (Dados pré-definidos pelo programador para que o estudante e docente sejam inseridos)
+- Hobbies (O usuário poderá criá-los. Cada estudante pode receber mais de um hobby)
+- Especialidades (Dados pré-definidos pelo programador. Cada docente pode receber mais de uma especialidade)
 
-As funcionalidades básicas são:
+---
 
-→ Criar estudante;
+## 👨‍💻️ Tecnologias utilizadas
 
-→ Criar docente;
+- Node
 
-→ Criar turma;
+### Dependências:
 
-→ Adicionar estudante na turma;
+- Express
+- Cors
+- Knex
+- MySQL
+- dotenv
 
-→ Adicionar docente na turma;
+### IDE:
 
-→ Pegar a idade de algum estudante a partir do id
+- Visual Studio Code
+
+### Terminal:
+
+- Git Bash
+
+---
+
+## 📦️ Como utilizar o projeto
+
+- Para copiar o projeto, utilize os comandos:
+
+```bash
+  # Clonar o repositório
+  ❯ git clone https://github.com/future4code/jackson-labenu-system9.git
+
+  # Entrar no diretório
+  ❯ cd jackson-labenu-system9
+```
+
+- Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn ou NPM:
+
+**Utilizando yarn**
+
+```bash
+  # Instalar as dependências
+  ❯ yarn
+
+  # Iniciar o projeto
+  ❯ yarn dev:server
+```
+
+**Utilizando npm**
+
+```bash
+  # Instalar as dependências
+  ❯ npm install
+
+  # Iniciar o projeto
+  ❯ npm start
+```
+
+---
+
+## 🤔️ Como contribuir
+
+1. Faça o `fork` deste repositório
+2. Crie uma branch com sua feature:
+   - `$ git checkout -b minha_feature`
+3. Confirme sua branch:
+   - `$ git commit -m "feature: Meu novo recurso"`
+4. Envie sua branch:
+   - `$ git push origin minha_feature`
+
+---
+
+<h4 align="center">
+  por Alice Souza
+</h4>
