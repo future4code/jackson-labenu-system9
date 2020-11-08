@@ -1,5 +1,5 @@
 <h1 align="center">
-  🚀️ Projeto de Introdução ao Back-end - Labenu System  🚀️
+  Projeto de Introdução ao Back-end - Labenu System  
 </h1>
 
 <p align="center">
