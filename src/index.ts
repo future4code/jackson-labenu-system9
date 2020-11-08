@@ -11,7 +11,6 @@ import { createTeacher } from "./endpoints/createTeacher";
 import { getTeachers } from "./endpoints/getTeachers";
 import { getAgeStudentById } from "./endpoints/getAgeStudentById";
 import { createHobby } from "./endpoints/createHobby";
-import { createSpecialty } from "./endpoints/createSpecialty";
 
 // Configurations
 dotenv.config()
@@ -38,7 +37,6 @@ app.post("/teacher/new", createTeacher)
 app.get("/teachers/all", getTeachers)
 app.get("/student/age/:id", getAgeStudentById)
 app.post("/hobby/new", createHobby)
-app.post("/specialty/new", createSpecialty)
 
 // Function rotate
 const server = app.listen(process.env.PORT || 3003, () => {
