@@ -25,9 +25,9 @@
 
 A proposta do **Labenu System** é ter um sistema que represente a organização da Labenu, como um projeto básico e introdutório ao back-end.
 Possui os seguintes dados:
-- Estudantes (O usuário poderá criá-los)
-- Docentes (O usuário poderá criá-los)
-- Turmas (Dados pré-definidos pelo programador para que o estudante e docente sejam inseridos)
+- Estudantes (O usuário poderá criá-los e adicioná-los em turmas)
+- Docentes (O usuário poderá criá-los e adicioná-los em turmas)
+- Turmas (Dados pré-definidos pelo programador para que o estudante e docente sejam adicionados)
 - Hobbies (O usuário poderá criá-los. Cada estudante pode receber mais de um hobby)
 - Especialidades (Dados pré-definidos pelo programador. Cada docente pode receber mais de uma especialidade)
 
