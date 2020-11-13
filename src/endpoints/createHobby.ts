@@ -1,9 +1,15 @@
-import { Request, Response } from "express";
-import { insertHobby } from "../data/insertHobby";
+import { Request, Response } from "express"
+import { insertHobby } from "../data/insertHobby"
 
-export const createHobby = async (req: Request, res: Response) => {
+export const createHobby = async (
+  req: Request, 
+  res: Response
+) => {
   try {
-    const { id, name } = req.body
+    const { 
+      id, 
+      name 
+    } = req.body
     await insertHobby(id, name)
     res.status(200).send("Novo hobby criado!")
   } catch (error) {

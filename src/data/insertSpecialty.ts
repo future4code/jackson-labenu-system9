@@ -1,4 +1,4 @@
-import { connection } from '../index';
+import { connection } from "../index"
 
 export async function insertSpecialty(
   id: number, 

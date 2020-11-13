@@ -1,10 +1,13 @@
 import { Request, Response } from "express"
-import { Main } from "../types"
-import { selectStudents } from "../datas/selectStudents"
+import { Student } from "../types/Student"
+import { selectStudents } from "../data/selectStudents"
 
-export async function getStudents (req: Request, res: Response) {
+export async function getStudents (
+   req: Request, 
+   res: Response
+) {
   try {
-     const students: Main[] = await selectStudents()
+     const students: Student[] = await selectStudents()
      if (!students.length) {
         res.statusCode = 404
         throw new Error("Estudantes não encontrados!")
