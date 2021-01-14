@@ -104,5 +104,5 @@ Possui os seguintes dados:
 ---
 
 <h4 align="center">
-  por Alice Souza
+  por Alice Souza 💚 
 </h4>
