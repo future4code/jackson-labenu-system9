@@ -1,3 +1,7 @@
+export class Teacher {
+   constructor
+}
+
 export enum SPECIALTIES {
    REACT = 'REACT',
    REDUX = 'REDUX',
@@ -8,7 +12,7 @@ export enum SPECIALTIES {
    BACKEND = 'BACKEND'
 }
 
-export type Teacher = {
+export interface TeacherInputDTO {
    id: string,
    name: string,
    email: string,
