@@ -1,4 +1,4 @@
-export type Student = {
+export interface StudentInputDTO {
    id: string,
    name: string,
    email: string,

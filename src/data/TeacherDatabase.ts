@@ -4,9 +4,7 @@ import { TeacherInputDTO } from "./../model/Teacher"
 export class TeacherDatabase extends BaseDatabase {
   private static TABLE_NAME = "teachers"
 
-  public async createTeacher(
-    teacher: TeacherInputDTO
-  ): Promise<void> {
+  public async createTeacher(teacher: TeacherInputDTO): Promise<void> {
     try {
       const {
         id,
