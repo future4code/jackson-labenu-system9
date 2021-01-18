@@ -76,3 +76,5 @@ export class TeacherDatabase extends BaseDatabase {
     }
   }
 }
+
+export const teacherDatabase = new TeacherDatabase();
