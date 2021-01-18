@@ -1,5 +1,5 @@
 import { BaseDatabase } from "./BaseDatabase";
-import { SPECIALTIES, TeacherInputDTO } from "./../model/Teacher"
+import { TeacherInputDTO } from "./../model/Teacher"
 
 export class TeacherDatabase extends BaseDatabase {
   private static TABLE_NAME = "teachers"
