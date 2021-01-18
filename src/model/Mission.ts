@@ -6,7 +6,7 @@ export enum SHIFTS {
    NOTURNA = "NOTURNA"
 }
 
-export type Mission = {
+export interface MissionInputDTO {
    id: string,
    name: string,
    start_date: string,
