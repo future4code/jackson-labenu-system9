@@ -1,7 +1,3 @@
-export class Teacher {
-   constructor
-}
-
 export enum SPECIALTIES {
    REACT = 'REACT',
    REDUX = 'REDUX',
