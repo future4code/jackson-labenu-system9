@@ -1,28 +1,29 @@
-import { Request, Response } from "express"
-import { insertTeacher } from "../data/insertTeacher"
-import { convertFormat } from "../services/convertFormat"
-import { generateId } from "../services/generateId"
-import { Teacher } from "../types/Teacher"
+import { Request, Response } from "express";
+import { teacherDatabase } from "../data/TeacherDatabase";
+import { convertFormat } from "../services/convertFormat";
+import { idGenerator } from "../services/generateId";
+import { TeacherInputDTO } from "../model/Teacher";
 
 export const createTeacher = async (
   req: Request,
   res: Response
 ) => {
   try {
+    const id = idGenerator.generate();
     const {
       name,
       birth_date,
       email,
       specialties
     } = req.body
-    const newTeacher: Teacher = {
-      id: generateId(),
+    const newTeacher: TeacherInputDTO = {
+      id,
       name,
       birth_date: convertFormat(birth_date),
       email,
       specialties: specialties || []
     }
-    await insertTeacher(newTeacher)
+    await teacherDatabase.createTeacher(newTeacher)
     res.status(200).send("Novo(a) intrutor(a) criado(a)!")
   } catch (error) {
     res.status(400).send({ message: error.message })
