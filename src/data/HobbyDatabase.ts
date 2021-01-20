@@ -4,7 +4,7 @@ export class HobbyDatabase extends BaseDatabase {
   private static TABLE_NAME = "hobbies"
 
   public async createHobby(
-    id: number,
+    id: string,
     name: string
   ): Promise<void> {
     await this.getConnection()
